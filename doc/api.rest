@@ -1,0 +1,19 @@
+### Get all favorites
+GET {{host}}/api/favorites
+Accept: application/json
+
+### Add favorite
+POST {{host}}/api/favorite
+Content-Type: application/json
+
+{
+  "productId": 999
+}
+
+
+### Get favorite by product id
+GET {{host}}/api/favorite/gid%3A%2F%2Fshopify%2FProduct%2F7983593390102
+Accept: application/json
+
+### Delete favorite by product id
+DELETE {{host}}/api/favorite/gid%3A%2F%2Fshopify%2FProduct%2F7983591030806
